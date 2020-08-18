@@ -19,7 +19,7 @@ library.add(fab, fas, faMapMarkedAlt);
 
 function App() {
   return (
-    <>
+    <main>
       <NavBar />
 
       <Router>
@@ -35,7 +35,7 @@ function App() {
         </Switch>
       </Router>
       <Footer />
-    </>
+    </main>
   );
 }
 

@@ -15,8 +15,6 @@ const Container = styled.div`
   max-width: 100%;
   width: auto !important;
   overflow-x: hidden !important;
-  overflow-y: scroll !important;
-  scroll-behavior: smooth !important;
 `;
 
 const ImageOne = styled.div`
@@ -39,6 +37,11 @@ const Overlay = styled.div`
   bottom: 0;
   right: 0;
   z-index: 1;
+`;
+
+const Cover = styled.div`
+  overflow-y: scroll !important;
+  scroll-behavior: smooth !important;
 `;
 
 const Title = styled.h1`
@@ -482,12 +485,12 @@ const Styles = styled.div`
 `;
 
 const Home = () => (
-  <>
+  <Container fluid>
     <Jumbotron />
     <Styles>
-      <Container fluid>
-        <ImageOne>
-          <Overlay></Overlay>
+      <ImageOne>
+        <Overlay></Overlay>
+        <Cover>
           <Title>Our Quality and Satisfaction Policy</Title>
           <Paragraph>
             "BlueFlame Engineering has been a household name in delivering
@@ -498,143 +501,139 @@ const Home = () => (
               Learn more<Arrow>→</Arrow>
             </Learn>
           </More>
-        </ImageOne>
+        </Cover>
+      </ImageOne>
 
-        <ImageTwo>
-          <Container fluid="xl">
-            <Row className="intro">
-              <Col xs={12} md={4} className="colintro1">
-                <Title5>
-                  <b>What We Do</b>
-                </Title5>
-                <Paragraph2 className="display-4">
-                  <b>
-                    BlueFlame has structured itself into various focused units
-                    in order to deliver improved solutions and services to it's
-                    customers.
-                  </b>
-                </Paragraph2>
-              </Col>
+      <ImageTwo>
+        <Row className="intro">
+          <Col xs={12} md={4} className="colintro1">
+            <Title5>
+              <b>What We Do</b>
+            </Title5>
+            <Paragraph2 className="display-4">
+              <b>
+                BlueFlame has structured itself into various focused units in
+                order to deliver improved solutions and services to it's
+                customers.
+              </b>
+            </Paragraph2>
+          </Col>
 
-              <Col xs={12} md={4} className="colintro2">
-                <Title5>
-                  <b>IT Infrastructure and Hardware Services</b>
-                </Title5>
-                <Paragraph2 className="display-4">
-                  <b>
-                    BlueFlame has structured itself into various focused units
-                    in order to deliver improved solutions and services to it's
-                    customers.
-                  </b>
-                </Paragraph2>
-              </Col>
+          <Col xs={12} md={4} className="colintro2">
+            <Title5>
+              <b>IT Infrastructure and Hardware Services</b>
+            </Title5>
+            <Paragraph2 className="display-4">
+              <b>
+                BlueFlame has structured itself into various focused units in
+                order to deliver improved solutions and services to it's
+                customers.
+              </b>
+            </Paragraph2>
+          </Col>
 
-              <Col xs={12} md={4} className="colintro3">
-                <Title5>
-                  <b>Software Services</b>
-                </Title5>
-                <Paragraph2 className="display-4">
-                  <b>
-                    BlueFlame has structured itself into various focused units
-                    in order to deliver improved solutions and services to it's
-                    customers.
-                  </b>
-                </Paragraph2>
-              </Col>
-            </Row>
-          </Container>
-        </ImageTwo>
+          <Col xs={12} md={4} className="colintro3">
+            <Title5>
+              <b>Software Services</b>
+            </Title5>
+            <Paragraph2 className="display-4">
+              <b>
+                BlueFlame has structured itself into various focused units in
+                order to deliver improved solutions and services to it's
+                customers.
+              </b>
+            </Paragraph2>
+          </Col>
+        </Row>
+      </ImageTwo>
 
-        <Container fluid="xl">
-          <Row>
-            <Col xs={12} md={3}>
-              <Card border="light" className="card-settings1">
-                <Card.Img
-                  className="imagesettings"
-                  src={`${training}`}
-                  alt="Card image"
-                />
-                <Card.Body>
-                  <Card.Text>
-                    <h5>Training</h5>
-                    Enable your organization work remotely while ensuring
-                    business continuity using our Document Archiving Solution.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+      <Row>
+        <Col xs={12} md={3}>
+          <Card border="light" className="card-settings1">
+            <Card.Img
+              className="imagesettings"
+              src={`${training}`}
+              alt="Card image"
+            />
+            <Card.Body>
+              <Card.Text>
+                <h5>Training</h5>
+                Enable your organization work remotely while ensuring business
+                continuity using our Document Archiving Solution.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
 
-            <Col xs={12} md={3}>
-              <Card border="light" className="card-settings2">
-                <Card.Img
-                  className="imagesettings"
-                  src={`${cloud}`}
-                  alt="Card image"
-                />
-                <Card.Body>
-                  <Card.Text>
-                    <h5>Cloud Services and Solutions</h5>
-                    Enable your organization work remotely while ensuring
-                    business continuity using our Document Archiving Solution.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+        <Col xs={12} md={3}>
+          <Card border="light" className="card-settings2">
+            <Card.Img
+              className="imagesettings"
+              src={`${cloud}`}
+              alt="Card image"
+            />
+            <Card.Body>
+              <Card.Text>
+                <h5>Cloud Services and Solutions</h5>
+                Enable your organization work remotely while ensuring business
+                continuity using our Document Archiving Solution.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
 
-            <Col xs={12} md={3}>
-              <Card border="light" className="card-settings3">
-                <Card.Img
-                  className="imagesettings"
-                  src={`${docmgt}`}
-                  alt="Card image"
-                />
-                <Card.Body>
-                  <Card.Text>
-                    <h5>Electronic Document Management Solution</h5>
-                    Enable your organization work remotely while ensuring
-                    business continuity using our Document Archiving Solution.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+        <Col xs={12} md={3}>
+          <Card border="light" className="card-settings3">
+            <Card.Img
+              className="imagesettings"
+              src={`${docmgt}`}
+              alt="Card image"
+            />
+            <Card.Body>
+              <Card.Text>
+                <h5>Electronic Document Management Solution</h5>
+                Enable your organization work remotely while ensuring business
+                continuity using our Document Archiving Solution.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
 
-            <Col xs={12} md={3}>
-              <Card border="light" className="card-settings4">
-                <Card.Img
-                  className="imagesettings"
-                  src={`${datarec}`}
-                  alt="Card image"
-                />
-                <Card.Body>
-                  <Card.Text>
-                    <h5>Data Recovery</h5>
-                    Enable your organization work remotely while ensuring
-                    business continuity using our Document Archiving Solution.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
+        <Col xs={12} md={3}>
+          <Card border="light" className="card-settings4">
+            <Card.Img
+              className="imagesettings"
+              src={`${datarec}`}
+              alt="Card image"
+            />
+            <Card.Body>
+              <Card.Text>
+                <h5>Data Recovery</h5>
+                Enable your organization work remotely while ensuring business
+                continuity using our Document Archiving Solution.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
 
-        <Projectview>
-          <div className="d-flex flex-row p-2 projectmerge">
-            <div className="d-inline-flex flex-column p-2">
-              <Title3>
-                <b>Interested in seeing more of our projects?</b>
-              </Title3>
-            </div>
-
-            <div className="d-inline-flex flex-column p-2">
-              <Button className="button-project" href="/Projects" size="lg">
-                See More
-              </Button>
-            </div>
+      <Projectview>
+        <div className="d-flex flex-row p-2 projectmerge">
+          <div className="d-inline-flex flex-column p-2">
+            <Title3>
+              <b>Interested in seeing more of our projects?</b>
+            </Title3>
           </div>
-        </Projectview>
-      </Container>
+
+          <div className="d-inline-flex flex-column p-2">
+            <Button className="button-project" href="/Projects" size="lg">
+              See More
+            </Button>
+          </div>
+        </div>
+      </Projectview>
     </Styles>
-  </>
+  </Container>
 );
 
 export default Home;

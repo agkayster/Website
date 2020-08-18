@@ -2,12 +2,15 @@ import React from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import styled from "styled-components";
 import image from "../assets/blueflame.jpg";
-import "jquery";
+import "./NavScroll";
 
 const Styles = styled.div`
   .navbar {
     background-color: transparent;
-    border-style: hidden;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
     @media (max-width: 425px) {
       padding: 0.5rem 2rem 1rem 1rem;
       background-color: grey;
@@ -15,7 +18,17 @@ const Styles = styled.div`
   }
 
   .navbar.scrolled {
-    background-color: #10caca !important;
+    background-color: rgb(0, 0, 205, 0.5) !important;
+    color: black;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+    @media (max-width: 425px) {
+      padding: 0.5rem 2rem 1rem 1rem;
+      background-color: grey !important;
+      transition: none;
+    }
   }
 
   .navbar-brand,
