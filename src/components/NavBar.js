@@ -51,7 +51,7 @@ const NavBar = () => {
       <Styles>
         <Navbar collapseOnSelect fixed="top" expand="lg">
           <Navbar.Brand href="/">
-            <img src={image} width="100" height="80" alt="BlueFlame" />
+            <img src={image} width="60" height="60" alt="BlueFlame" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

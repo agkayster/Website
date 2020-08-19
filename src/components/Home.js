@@ -4,7 +4,7 @@ import image from "../assets/city1.jpg";
 import clips from "../assets/clips.jpg";
 import docmgt from "../assets/docmgt.jpg";
 import cloud from "../assets/cloud.jpg";
-import training from "../assets/training.jpg";
+import training from "../assets/training_Cropped.jpg";
 import datarec from "../assets/datarec.jpg";
 import { Button, Card, Row, Col } from "react-bootstrap";
 import Jumbotron from "./Jumbotron";
@@ -18,7 +18,7 @@ const Container = styled.div`
 `;
 
 const ImageOne = styled.div`
-  background: url(${image}) no-repeat center center/cover;
+  background: url(${image}) no-repeat bottom;
   background-size: cover;
   margin-left: -15px;
   margin-right: -15px;
@@ -143,7 +143,7 @@ const Arrow = styled.span`
 `;
 
 const ImageTwo = styled.div`
-  background: url(${clips}) no-repeat fixed bottom;
+  background: url(${clips}) no-repeat bottom;
   background-size: cover;
   margin-left: -15px;
   margin-right: -15px;
