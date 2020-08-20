@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import styled from "styled-components";
-import image from "../assets/blueflame.jpg";
+import image from "../assets/blueflame.png";
 import "./NavScroll";
 
 const Styles = styled.div`
@@ -51,7 +51,7 @@ const NavBar = () => {
       <Styles>
         <Navbar collapseOnSelect fixed="top" expand="lg">
           <Navbar.Brand href="/">
-            <img src={image} width="60" height="60" alt="BlueFlame" />
+            <img src={image} width="80" height="80" alt="BlueFlame" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

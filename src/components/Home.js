@@ -143,7 +143,7 @@ const Arrow = styled.span`
 `;
 
 const ImageTwo = styled.div`
-  background: url(${clips}) no-repeat bottom;
+  background: url(${clips}) no-repeat fixed bottom;
   background-size: cover;
   margin-left: -15px;
   margin-right: -15px;
