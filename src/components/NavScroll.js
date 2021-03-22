@@ -2,7 +2,7 @@ import $ from "jquery";
 
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(document).scrollTop() > 563) {
+    if ($(document).scrollTop() > 615) {
       $("nav").addClass("scrolled");
     } else {
       $("nav").removeClass("scrolled");

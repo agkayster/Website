@@ -1,7 +1,9 @@
 import React from "react";
+import LayoutNav from "./LayoutNav";
 
 const Projects = () => (
   <div>
+    <LayoutNav />
     <h1>Projects</h1>
     <p>Take a look at projects and our experience</p>
     <p>

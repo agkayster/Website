@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 import Careers from "./components/Careers";
 import Contact from "./components/Contact";
 import Layout from "./components/Layout";
-import NavBar from "./components/NavBar";
+
 import Footer from "./components/Footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -20,7 +20,7 @@ library.add(fab, fas, faMapMarkedAlt);
 function App() {
   return (
     <main>
-      <NavBar />
+      
 
       <Router>
         <Switch>

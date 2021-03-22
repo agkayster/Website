@@ -1,7 +1,9 @@
 import React from 'react';
+import LayoutNav from "./LayoutNav";
 
 const Careers = () => (
   <div>
+    <LayoutNav />
     <h1>Careers</h1>
     <p>Check out jobs below</p>
     <p>

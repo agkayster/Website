@@ -8,6 +8,7 @@ import training from "../assets/training_Cropped.jpg";
 import datarec from "../assets/datarec.jpg";
 import { Button, Card, Row, Col } from "react-bootstrap";
 import Jumbotron from "./Jumbotron";
+import NavBar from "./NavBar";
 
 // import { device } from "./device";
 
@@ -18,7 +19,7 @@ const Container = styled.div`
 `;
 
 const ImageOne = styled.div`
-  background: url(${image}) no-repeat bottom;
+  background: url(${image}) no-repeat fixed bottom;
   background-size: cover;
   margin-left: -15px;
   margin-right: -15px;
@@ -485,155 +486,159 @@ const Styles = styled.div`
 `;
 
 const Home = () => (
-  <Container fluid>
-    <Jumbotron />
-    <Styles>
-      <ImageOne>
-        <Overlay></Overlay>
-        <Cover>
-          <Title>Our Quality and Satisfaction Policy</Title>
-          <Paragraph>
-            "BlueFlame Engineering has been a household name in delivering
-            quality ICT solutions that always exceeds the clients expectations."
-          </Paragraph>
-          <More>
-            <Learn href="/About">
-              Learn more<Arrow>→</Arrow>
-            </Learn>
-          </More>
-        </Cover>
-      </ImageOne>
+  <div>
+    <NavBar />
+    <Container fluid>
+      <Jumbotron />
+      <Styles>
+        <ImageOne>
+          <Overlay></Overlay>
+          <Cover>
+            <Title>Our Quality and Satisfaction Policy</Title>
+            <Paragraph>
+              "BlueFlame Engineering has been a household name in delivering
+              quality ICT solutions that always exceeds the clients
+              expectations."
+            </Paragraph>
+            <More>
+              <Learn href="/About">
+                Learn more<Arrow>→</Arrow>
+              </Learn>
+            </More>
+          </Cover>
+        </ImageOne>
 
-      <ImageTwo>
-        <Row className="intro">
-          <Col xs={12} md={4} className="colintro1">
-            <Title5>
-              <b>What We Do</b>
-            </Title5>
-            <Paragraph2 className="display-4">
-              <b>
-                BlueFlame has structured itself into various focused units in
-                order to deliver improved solutions and services to it's
-                customers.
-              </b>
-            </Paragraph2>
+        <ImageTwo>
+          <Row className="intro">
+            <Col xs={12} md={4} className="colintro1">
+              <Title5>
+                <b>What We Do</b>
+              </Title5>
+              <Paragraph2 className="display-4">
+                <b>
+                  BlueFlame has structured itself into various focused units in
+                  order to deliver improved solutions and services to it's
+                  customers.
+                </b>
+              </Paragraph2>
+            </Col>
+
+            <Col xs={12} md={4} className="colintro2">
+              <Title5>
+                <b>IT Infrastructure and Hardware Services</b>
+              </Title5>
+              <Paragraph2 className="display-4">
+                <b>
+                  BlueFlame has structured itself into various focused units in
+                  order to deliver improved solutions and services to it's
+                  customers.
+                </b>
+              </Paragraph2>
+            </Col>
+
+            <Col xs={12} md={4} className="colintro3">
+              <Title5>
+                <b>Software Services</b>
+              </Title5>
+              <Paragraph2 className="display-4">
+                <b>
+                  BlueFlame has structured itself into various focused units in
+                  order to deliver improved solutions and services to it's
+                  customers.
+                </b>
+              </Paragraph2>
+            </Col>
+          </Row>
+        </ImageTwo>
+
+        <Row>
+          <Col xs={12} md={3}>
+            <Card border="light" className="card-settings1">
+              <Card.Img
+                className="imagesettings"
+                src={`${training}`}
+                alt="Card image"
+              />
+              <Card.Body>
+                <Card.Text>
+                  <h5>Training</h5>
+                  Enable your organization work remotely while ensuring business
+                  continuity using our Document Archiving Solution.
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
 
-          <Col xs={12} md={4} className="colintro2">
-            <Title5>
-              <b>IT Infrastructure and Hardware Services</b>
-            </Title5>
-            <Paragraph2 className="display-4">
-              <b>
-                BlueFlame has structured itself into various focused units in
-                order to deliver improved solutions and services to it's
-                customers.
-              </b>
-            </Paragraph2>
+          <Col xs={12} md={3}>
+            <Card border="light" className="card-settings2">
+              <Card.Img
+                className="imagesettings"
+                src={`${cloud}`}
+                alt="Card image"
+              />
+              <Card.Body>
+                <Card.Text>
+                  <h5>Cloud Services and Solutions</h5>
+                  Enable your organization work remotely while ensuring business
+                  continuity using our Document Archiving Solution.
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
 
-          <Col xs={12} md={4} className="colintro3">
-            <Title5>
-              <b>Software Services</b>
-            </Title5>
-            <Paragraph2 className="display-4">
-              <b>
-                BlueFlame has structured itself into various focused units in
-                order to deliver improved solutions and services to it's
-                customers.
-              </b>
-            </Paragraph2>
+          <Col xs={12} md={3}>
+            <Card border="light" className="card-settings3">
+              <Card.Img
+                className="imagesettings"
+                src={`${docmgt}`}
+                alt="Card image"
+              />
+              <Card.Body>
+                <Card.Text>
+                  <h5>Electronic Document Management Solution</h5>
+                  Enable your organization work remotely while ensuring business
+                  continuity using our Document Archiving Solution.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col xs={12} md={3}>
+            <Card border="light" className="card-settings4">
+              <Card.Img
+                className="imagesettings"
+                src={`${datarec}`}
+                alt="Card image"
+              />
+              <Card.Body>
+                <Card.Text>
+                  <h5>Data Recovery</h5>
+                  Enable your organization work remotely while ensuring business
+                  continuity using our Document Archiving Solution.
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
-      </ImageTwo>
 
-      <Row>
-        <Col xs={12} md={3}>
-          <Card border="light" className="card-settings1">
-            <Card.Img
-              className="imagesettings"
-              src={`${training}`}
-              alt="Card image"
-            />
-            <Card.Body>
-              <Card.Text>
-                <h5>Training</h5>
-                Enable your organization work remotely while ensuring business
-                continuity using our Document Archiving Solution.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+        <Projectview>
+          <div className="d-flex flex-row p-2 projectmerge">
+            <div className="d-inline-flex flex-column p-2">
+              <Title3>
+                <b>Interested in seeing more of our projects?</b>
+              </Title3>
+            </div>
 
-        <Col xs={12} md={3}>
-          <Card border="light" className="card-settings2">
-            <Card.Img
-              className="imagesettings"
-              src={`${cloud}`}
-              alt="Card image"
-            />
-            <Card.Body>
-              <Card.Text>
-                <h5>Cloud Services and Solutions</h5>
-                Enable your organization work remotely while ensuring business
-                continuity using our Document Archiving Solution.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col xs={12} md={3}>
-          <Card border="light" className="card-settings3">
-            <Card.Img
-              className="imagesettings"
-              src={`${docmgt}`}
-              alt="Card image"
-            />
-            <Card.Body>
-              <Card.Text>
-                <h5>Electronic Document Management Solution</h5>
-                Enable your organization work remotely while ensuring business
-                continuity using our Document Archiving Solution.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col xs={12} md={3}>
-          <Card border="light" className="card-settings4">
-            <Card.Img
-              className="imagesettings"
-              src={`${datarec}`}
-              alt="Card image"
-            />
-            <Card.Body>
-              <Card.Text>
-                <h5>Data Recovery</h5>
-                Enable your organization work remotely while ensuring business
-                continuity using our Document Archiving Solution.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-
-      <Projectview>
-        <div className="d-flex flex-row p-2 projectmerge">
-          <div className="d-inline-flex flex-column p-2">
-            <Title3>
-              <b>Interested in seeing more of our projects?</b>
-            </Title3>
+            <div className="d-inline-flex flex-column p-2">
+              <Button className="button-project" href="/Projects" size="lg">
+                See More
+              </Button>
+            </div>
           </div>
-
-          <div className="d-inline-flex flex-column p-2">
-            <Button className="button-project" href="/Projects" size="lg">
-              See More
-            </Button>
-          </div>
-        </div>
-      </Projectview>
-    </Styles>
-  </Container>
+        </Projectview>
+      </Styles>
+    </Container>
+  </div>
 );
 
 export default Home;

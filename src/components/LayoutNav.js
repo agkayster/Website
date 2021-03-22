@@ -2,11 +2,10 @@ import React from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import styled from "styled-components";
 import image from "../assets/blueflame.png";
-import "./NavScroll";
 
 const Styles = styled.div`
   .navbar {
-    background-color: transparent;
+    background-color: rgb(255, 255, 255);
     -webkit-transition: background-color 500ms linear;
     -moz-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
@@ -17,26 +16,12 @@ const Styles = styled.div`
     }
   }
 
-  .navbar.scrolled {
-    background-color: rgb(0, 0, 205, 0.5) !important;
-    color: black;
-    -webkit-transition: background-color 500ms linear;
-    -moz-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear;
-    @media (max-width: 425px) {
-      padding: 0.5rem 2rem 1rem 1rem;
-      background-color: grey !important;
-      transition: none;
-    }
-  }
-
   .navbar-brand,
   .navbar-nav .nav-link {
-    color: #bbb;
+    color: #000;
 
     &:hover {
-      color: white;
+      color: #bbb;
     }
   }
 
@@ -46,13 +31,13 @@ const Styles = styled.div`
   }
 `;
 
-const NavBar = () => {
+const LayoutNav = () => {
   return (
     <>
       <Styles>
         <Navbar collapseOnSelect fixed="top" expand="lg">
           <Navbar.Brand href="/">
-            <img src={image} width="80" height="80" alt="BlueFlame" />
+            <img src={image} width="80" height="60" alt="BlueFlame" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -130,4 +115,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default LayoutNav;
